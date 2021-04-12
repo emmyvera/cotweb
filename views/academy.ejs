@@ -37,7 +37,7 @@
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Study Plan</h4>
+                    <h4 class="card-title">Academy</h4>
                     <table class="table table-hover">
                       <thead>
                         <tr>
@@ -53,20 +53,17 @@
                         your variable */ i++) { %>
                         <tr>
                           <td><%= i+1 %></td>
-                          <td><%= result[i].topic %></td>
+                          <td><%= result[i].title %></td>
                           <td>
                             <button
                               type="button"
-                              class="btn btn-outline-dark btn-fw"
+                              class="btn btn-warning btn-fw"
                             >
                               Edit
                             </button>
                           </td>
                           <td>
-                            <button
-                              type="button"
-                              class="btn btn-outline-danger btn-fw"
-                            >
+                            <button type="button" class="btn btn-danger btn-fw">
                               Delete
                             </button>
                           </td>
@@ -77,19 +74,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              id="settings-trigger"
-              style="position: fixed; bottom: 50px; right: 30px; z-index: 99"
-            >
-              <a href="/bibleStudy/add-study">
-                <button
-                  type="button"
-                  class="btn btn-outline-dark btn-icon-text"
-                >
-                  <i class="mdi mdi-plus btn-icon-prepend"></i> Add Study
-                </button>
-              </a>
             </div>
           </div>
           <!-- partial:../../partials/_footer.html -->

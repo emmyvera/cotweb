@@ -4,23 +4,20 @@ const BibleStudy = require("../model/bibleStudy");
 //Get BibleStudy
 router.get("/", async (req, res) => {
     try {
-        const bibleStudyInfo = await BibleStudy.find({});
+        const result = await BibleStudy.find({});
 
-        res.render("bibleStudy")
-
-
-        // res.json({
-        //     success: true,
-        //     BibleStudy: bibleStudyInfo,
-        //     message: "Welcome And Stay Blessed!"
-
-        // });
+        res.render("bibleStudy", {
+            result
+        })
 
     } catch (err) {
         console.log(err)
     }
 });
 
+router.get("/add-study", (req, res) => {
+    res.render("add-study")
+})
 router.get("/list", async (req, res) => {
     try {
         const studyInfo = await BibleStudy.find({});
