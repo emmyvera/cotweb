@@ -15,4 +15,8 @@ route.get("/", async (req, res) => {
     }
 });
 
+route.get("/add-post", (req, res) => {
+    res.render("add-post")
+})
+
 module.exports = route

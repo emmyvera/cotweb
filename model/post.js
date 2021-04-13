@@ -28,7 +28,7 @@ const PostSchema = new Schema({
 
     category: {
         type: String,
-        default: "Admin"
+        default: "Info"
     },
 
 });

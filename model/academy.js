@@ -39,12 +39,6 @@ const AcademySchema = new Schema({
         trim: true
     },
 
-    fileCategory: {
-        type: String,
-        default: "Others",
-        trim: true
-    },
-
     fileLink: {
         type: String,
         required: true,

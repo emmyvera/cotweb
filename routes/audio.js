@@ -13,4 +13,8 @@ route.get("/", async (req, res) => {
     }
 })
 
+route.get("/add-audio", (req, res) => {
+    res.render("add-audio")
+})
+
 module.exports = route
